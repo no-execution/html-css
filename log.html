@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<html>
+<head>
+<title>login</title>
+<style type="text/css">
+*{margin:0;
+	padding:0;}
+
+#login{position:absolute;
+		top:70%;
+		width:100%;
+		height:9%;
+	}
+
+#left{position: absolute;
+		line-height: 45px;
+		left:3%;
+		color:white;
+		font-size: 13px;
+		font-family: "幼圆";
+		text-decoration: none;
+		}
+
+#mid{position: absolute;
+		line-height: 45px;
+		left:48%;
+		color:white;
+		letter-spacing: 2px;
+		font-family: "宋体";
+	}                                                                                                                          
+#right{position: absolute;
+		line-height: 45px;
+		right:3%;
+		color:white;
+		font-size:13px;
+		text-decoration: none;
+		}
+
+.log{background: white;
+	background-size:100% 100%; 
+	width:100%;
+	height:50px;
+	position: absolute;
+	top:60px;
+	 }
+
+.pass{background: white;
+	background-size: 100% 100%;
+	width:100%;
+	height:50px;
+	position: absolute;
+	top:120px;
+	}
+
+#row1{background: url(D:\\Documents\\Desktop\\html\\task3\\iphone.png)no-repeat ;
+	background-size:1.6% 50%; 
+	background-position:5px 10px; 
+	display: block;
+	position:absolute;
+	top:4%;
+	width:1000px;height:50px;
+	border: none;
+	outline: none;
+	padding-left:45px;
+}
+
+#row2{background: url(D:\\Documents\\Desktop\\html\\task3\\lock.png)no-repeat ;
+	line-height: normal;
+	background-size:1.9% 50%; 
+	background-position:5px 10px; 
+	display: block;
+	position:absolute;
+	top:3%;
+	width:1000px;height:50px;
+	border: none;
+	outline: none;
+	padding-left:45px;
+}
+
+li{		
+	list-style: none;}		
+
+.btn{position:absolute;
+		top:50%;
+		color:white;
+		font-size: 15px;
+		letter-spacing: 2px;
+		width: 100%;
+		height:50px;
+		background:url(D:\\Documents\\Desktop\\html\\task3\\login.png); 
+		border: none;
+		outline: none;}
+
+body{background: url(D:\\Documents\\Desktop\\html\\task3\\grey.png);
+	overflow: hidden;
+	}
+
+img{width:100%;
+	height:100%;
+	padding:0px;
+	margin:0px;}
+
+#bottom{position: absolute;
+	display: block;
+	bottom:30%;
+	right:3%;
+	color:green;
+	}
+
+.log img{width:2px;
+		top:12px;
+		height:55%;
+		position: absolute;
+		left:33px;
+		}
+
+.pass img{width:2px;
+		top:12px;
+		height:55%;
+		position: absolute;
+		left:33px;
+		}
+
+.btn:hover {background: #5bb7c3;}
+
+.btn{transition: background 0.5s;
+	cursor: pointer;}
+
+header{color:white;
+		text-align: center;
+		background: url(D:\\Documents\\Desktop\\html\\task3\\header.png);
+		line-height:45px;
+		height:45px;}
+
+</style>
+<body>
+</head>
+<header>
+	登录
+	<a id="left" href="#">注册</a><a id="right" href="#">关闭</a>
+</header>
+<form>
+		<div class="log">
+			<img src="D:\\Documents\\Desktop\\html\\task3\\juxing.png">
+			<input id="row1" type="text" name="dial" placeholder="请输入手机号" />
+		</div>
+		<div class="pass">
+			<img src="D:\\Documents\\Desktop\\html\\task3\\juxing.png">
+			<input id="row2" type="password" name="password" placeholder="请输入密码" />
+		</div>
+		<button  class="btn btn-login">
+		登录
+		</button>
+
+</form>
+<a id="bottom" href="http://www.baidu.com">忘记密码？</a>
+</body>
+</html>
