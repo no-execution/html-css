@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<html>
+<head>
+	<title>info about workers</title>
+
+<style type="text/css">
+*{margin:0;
+	padding:0;
+	}
+main{
+	height: 600px;}
+
+button{outline: none;}
+
+header{background: #33ccff;
+		height:50px;
+		width:100%;
+		position: fixed;
+		color: white;
+		line-height: 50px;
+		text-align: center;
+		font-size: 18px;
+		font-family:"幼圆";
+		z-index: 100;
+		top:0;
+	}
+
+footer{background: white;
+		height:45px;
+		width: 100%;
+		position: fixed;
+		bottom: 0px;
+		z-index: 100;
+		margin-top:10px;
+		}
+#nav{position: fixed;
+	width: 100%;
+	left:0;
+	z-index: 10000;}
+#back{position: absolute;
+	top:15px;
+	left:20px;
+	width: 10px;	
+	}
+
+.header{background: url(D:\\Documents\\Desktop\\html\\task4\\background.png);
+	background-size: 100%;
+	width: 100%;
+	height:150px;
+	position: absolute;
+	top:43px;
+	}
+
+.head{background: white;
+	background-size:100%; 
+	width: 70px;
+	height: 70px;
+	border-radius: 70px;
+	position: absolute;
+	top: 40px; 
+	left: 20px;
+	overflow: hidden;
+	}
+
+.head img{width: 70px;
+		}
+#name{color: white;
+			position: absolute;
+			left:120px;
+			top:50px;
+			font-size: 15px;
+		}
+
+.inner{height:145px;
+		width: 100%;
+		background: rgba(0,0,0,.4);	
+		margin-top:5px;
+		}
+
+#position{color:white;
+		position: absolute;
+		top:75px;
+		left:142px;
+		font-size: 12px;
+		letter-spacing: 3px;
+		}
+
+#position img{position: absolute;
+		top: 1px;
+		width: 11px;
+		left:-21px;
+		}
+
+
+
+main div div{background: #CCCCFF;
+		width:1px;
+		height: 30px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 11px;
+		}
+
+ul{position: absolute;
+	top:195px;
+	width:100%;
+	margin-top: 0px;
+	}
+
+li{list-style: none;
+	margin-left: 1%;
+	margin-top: 0px;
+	border-bottom: 1px solid #a1afc9;
+	width:98%;
+	min-height: 50px;
+	font-size: 12px;
+	line-height: 50px;
+	}
+#first {width: 100%;
+		margin:0px;}
+/*第一行的设置*/
+.a1-blue{width:2.5px;
+		height:18px;
+		background: #33ccff;
+		float: left;
+		margin-left: 12px;
+		margin-top: 16px;
+		}
+
+.a1{float: left;
+	margin-left:7px;
+	line-height: 50px;
+	}
+
+/*第二行的设置*/
+.a2-1{float: left;
+	margin-left:20px;
+
+	}
+
+.a2-1 img{width: 13px;
+		position: absolute;
+		left:10px;
+		margin-top:19px;
+		}
+
+.a2-2{float:left;
+	margin-left:30px;
+	}
+.a2-2 img{width: 13px;
+		position: absolute;
+		left:64px;
+		margin-top:19px;}
+
+/*第三行的设置*/
+.a3-1{color: #CCCCCC;
+	padding-left:5px; 
+	float: left;
+	}
+.a3-2{float: left;}
+
+.a3-2 div{float: left;}
+
+/*第四行的设置*/
+.a4-1{color: #cccccc;
+	padding-left: 5px;
+	float: left;
+	}
+
+.a4-2{float: left;}
+
+.a4-2 div{float: left;}
+/*第五行的设置*/
+.a5-1{color: #cccccc;
+	padding-left: 5px;
+	float: left;
+	}
+
+.a5-2{float: left;}
+
+.a5-2 div{float: left;}
+
+/*第六行设置*/
+.end{position: relative;}
+
+.a6-1{position: absolute;
+	top:50%;
+	border-right:1px solid #CCCCFF; 
+	height: 30px;
+	line-height:30px; 
+	color: #CCCCFF;
+	transform: translateY(-50%);
+	width: 4.9em;
+	left: 3.5px;
+	}
+
+.a6-3{
+	margin-left:6em; 
+	line-height: 17px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
+
+/*底部按钮*/
+.message{width: 45%;
+		height: 35px;
+		position: fixed;
+		margin-top: 3px;
+		margin-bottom: 3px;
+		bottom: 0;
+		background: white;
+		border: 1.5px solid #33ccff;
+		border-radius: 10px;
+		color: #33ccff;
+		text-align: center;
+		line-height: 35px;
+		left: 3%; 
+		}
+.connect{width: 45%;
+		height: 35px;
+		position: fixed;
+		margin-top: 3px;
+		margin-bottom: 3px;
+		bottom: 0;
+		border: 1.5px solid #33ccff;
+		border-radius: 10px;
+		color: white;
+		text-align: center;
+		line-height: 35px;
+		right:3%;
+		background: #33ccff; }
+</style>	
+</head>
+<body>
+	<header>
+	<p id="hh">个人主页</p>
+	<a href="http://www.baidu.com"><img id="back" src="D:\\Documents\\Desktop\\html\\task4\\back.png"></a>	
+	</header>
+
+	<div class="header">
+		<div class="head">
+			<img src="D:\\Documents\\Desktop\\html\\task4\\people.png">
+		</div>
+		<p id="name">徐士林55岁</p>
+		<div class="inner"></div>
+		<p id="position">
+		京城·四方·报纸林
+		<img src="D:\\Documents\\Desktop\\html\\task4\\icon.png">
+		</p>
+	</div>
+
+	<main>
+		<ul>
+			<li id="first">
+				<div class="a1-blue"></div>
+				<div class="a1">专业技能</div>
+			</li>
+			
+			<li>
+				<div class="a2-1"><img src="D:\\Documents\\Desktop\\html\\task4\\star.png">住家</div>
+				<div class="a2-2"><img src="D:\\Documents\\Desktop\\html\\task4\\star.png">不含餐</div>
+			</li>
+			
+			<li>
+				<div class="a3-1">从业年限</div>
+				<div class="a3-2"><div></div>0~3年</div>
+			</li>
+			
+			<li>
+				<div class="a4-1">工作时间</div>
+				<div class="a4-2"><div></div>全天</div>
+			</li>
+			
+			<li>
+				<div class="a5-1">服务价格</div>
+				<div class="a5-2"><div></div>25元/小时</div>
+			</li>
+			
+			<li class="end">
+				<div class="a6-1">自我介绍</div>
+				<div class="a6-3">
+					我会照顾老人，我会照顾老人，我会照顾老人。我会照顾老人，我会照顾老人，我会照顾老人。我会照顾老人，我会照顾老人，我会照顾老人。
+				</div>
+				
+			</li>
+		</ul>
+	</main>
+
+	<footer>
+		<button class="message">留言</button>
+		<button class="connect">电话联系</button>
+	</footer>
+</body>
+
+</html>
